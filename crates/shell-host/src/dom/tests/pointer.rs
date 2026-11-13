@@ -443,7 +443,10 @@ fn a_move_inside_one_element_does_not_move_the_hover() {
     let at = |pos| pointer::move_event(pos, MouseEventButtons::None, Modifiers::empty());
 
     assert!(doc.handle_move(at(pos)), "the first move hovers the icon");
-    assert!(!doc.handle_move(at(nudged)), "a nudge inside it moves nothing");
+    assert!(
+        !doc.handle_move(at(nudged)),
+        "a nudge inside it moves nothing"
+    );
     assert!(!doc.handle_move(at(pos)), "and neither does coming back");
     assert_eq!(doc.dioxus().inner.borrow().get_hover_node_id(), Some(icon0));
 }
