@@ -1005,7 +1005,7 @@ P2-Z-sh (compositor-scope/20-FREEZE-PLAN.md section 4.10, P2 row), implemented w
 
 ## Type rules (2026-10-28)
 
-- The "no `bool`" rule is replaced by plain Rust first (CONVENTIONS section 4): two-way internal
+- The "no `bool`" rule is replaced by plain Rust first: two-way internal
   enums (`Published`, `Fingers`, `Verdict`, ...) became `bool`, `Option` or `ControlFlow`.
 
 ## Open items from the production audit

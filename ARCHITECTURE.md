@@ -3,7 +3,7 @@
 shell-host runs Blitz / Dioxus Native documents on Wayland: layer-shell surfaces, xdg popups,
 xdg toplevels and the session lock, on one GPU device and one renderer. `README.md` describes it
 and its demos, `FINDINGS.md` holds the facts about Blitz, the compositors and the protocols it
-relies on, and `CONVENTIONS.md` holds the rules every repo shares. This file is the map: where
+relies on, and `CONVENTIONS.md` names the style guides every repo follows. This file is the map: where
 each thing lives, what may depend on what, and how to add the next thing.
 
 shell-host stands below quire and sill and is portable to any Wayland compositor with
@@ -66,7 +66,7 @@ a higher one. When something needs a higher layer, move the shared piece down or
 | L6 Wayland effects | `state`, `surface`, `role`, `handlers/*` (`pipe_writes`, `surface_objects`, `text_input`, `surrounding` among them), `clipboard`, `cursor`, `ime` (`ime/surrounding`: what to send about the text around the caret), `input/{key,scroll,palmrest}` (socket), `scroll/{surface,paint,tuning}`, `lock/active` | effects |
 | L7 orchestration | `ctx/*`, `host`, `inject` | effects; the loop and the flush |
 
-Fixed role files inside a concept directory (CONVENTIONS section 2 plus these): `decide.rs` (the
+Fixed role files inside a concept directory (these): `decide.rs` (the
 pure decision behind an effectful handler), `wire.rs` (mapping to protocol enums), `tests.rs`.
 
 ### Files that split (each over 400 lines today)

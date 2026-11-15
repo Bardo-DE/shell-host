@@ -9,8 +9,8 @@ compositor-specific crates (`scripts/check-boundary.sh`). The shell (sill) and e
 
 `FINDINGS.md` records the standing facts about Blitz, the compositors and the protocols that the
 code relies on and the items still open (module docs cite them by number), `ARCHITECTURE.md`
-gives the crate map, the modules and the repo rules, and `CONVENTIONS.md` says how the code is
-written.
+gives the crate map, the modules and the repo rules, and `CONVENTIONS.md` names the style guides the code
+follows.
 
 ## Demos
 
